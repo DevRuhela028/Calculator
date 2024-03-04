@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src = "calculator.js"></script>
+</head>
+<body>
+    <div class = "nav-bar">
+        CALCULATOR
+    </div>
+    <div class="container">
+    <div class="calculator">
+        <input type="text" disabled class = "input" id = "in">
+        <input type ="text" placeholder = "ANS" disabled class = "output" id = "out">
+        <div class="rows">
+            <div onclick = "handleClick(this)" class="columns" id="+">+</div>
+            <div onclick = "handleClick(this)" class="columns" id="-">-</div>
+            <div onclick = "handleClick(this)" class="columns" id="/">/</div>
+            <div onclick = "handleClick(this)" class="columns" id="*">*</div>
+        </div>
+        <div class="rows">
+            <div onclick = "handleClick(this)" class="columns" id="7">7</div>
+            <div onclick = "handleClick(this)" class="columns" id="8">8</div>
+            <div onclick = "handleClick(this)" class="columns" id="9">9</div>
+        </div>
+        <div class="rows">
+            <div onclick = "handleClick(this)" class="columns" id="4">4</div>
+            <div onclick = "handleClick(this)" class="columns" id="5">5</div>
+            <div onclick = "handleClick(this)" class="columns" id="6">6</div>
+        </div>
+        <div class="rows">
+            <div onclick = "handleClick(this)" class="columns" id="1">1</div>
+            <div onclick = "handleClick(this)" class="columns" id="2">2</div>
+            <div onclick = "handleClick(this)" class="columns" id="3">3</div>
+        </div>
+        <div class="rows">
+            <div onclick = "handleClick(this)" class="columns" id="0">0</div>
+            <div onclick = "reset()" class="columns" id="clear">clear</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
